@@ -12,4 +12,32 @@ $(function (){
             })
         return false;
     });
-})
+
+
+    $('#contact-form').validate({
+        rules: {
+            name: {
+                required: true,             
+            },
+            last_name: {
+                required: true,             
+            },
+            email: {
+                required: true,
+            },
+            body: {
+                required: true,
+            }
+        },
+        messages: {
+            name: "Ім'я не може бути порожнім.",
+            email: {
+                required: "Email не може бути порожнім.",
+                email: "Email адреса повинна бути у форматі, типу name@domain.com"
+            },
+            last_name: "Прізвище не може бути порожнім.",
+            body: "Повідомлення не може бути порожнім."
+        }
+    });
+
+});
