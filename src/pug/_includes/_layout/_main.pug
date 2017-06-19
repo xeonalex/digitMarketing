@@ -7,27 +7,109 @@ main.main
 			.container
 				h3.section-title Package services
 		ul.package-services__tabs.js_tabs-navigation
-			li.package-services__tab-link.js_tabs-link.activated
+			li.package-services__tab-link.js_tabs-link.activated(data-tab='#packg1')
 				.package-services__tab-link-title Package 1
 				.package-services__tab-link-text
 					| 200 usd per month, <br>
 					| 75 usd AD budget included <br>
 					| (you can add any extra <br>
 					| budget you want)
-			li.package-services__tab-link.js_tabs-link
+			li.package-services__tab-link.js_tabs-link(data-tab='#packg2')
 				.package-services__tab-link-title Package 2
 				.package-services__tab-link-text
 					| 400 usd per month, <br>
 					| 200 usd AD budget included <br>
 					| (you can add any extra <br>
 					| budget you want)
-			li.package-services__tab-link.js_tabs-link
+			li.package-services__tab-link.js_tabs-link(data-tab='#packg3')
 				.package-services__tab-link-title Package 3
 				.package-services__tab-link-text
 					| 600 usd per month, <br>
 					| 300 usd AD budget included <br>
 					| (you can add any extra <br>
 					| budget you want)
-		.package-services__tabs-content.js_tabs-wrap
-			.container
+		.container
+			.package-services__tabs-content.js_tabs-wrap
+				#packg1.activated
+					.package__block
+						h4.package__title.adwords Google ADwords:
+						.package__descr
+							p
+								| 4 data-driven, geographically-targeted Pay-Per-Click campaign. Research of 50 keywords. <br>
+								| 3 remarketing campaigns - we can design banners for special discounted price <br>
+								| 2 Monthly reports - Advanced Analytics Conversion Tracking <br>
+								| 4 reviews per month to optimise keywords reviews per month to optimise keywords to reduce wasted clicks and improve ROI <br>
+								| If you don’t have google analytics setup we will make it for you for special discounted price.
+								| This is needed to track  and analyse the effectiveness of AD campaigns and will show you
+								| various statistics for visitor of your web pages.
+					.package__block
+						h4.package__title.fb Facebook:
+						.package__descr
+							p
+								| Design a 3 data-driven, geographically-targeted AD campaigns. Two will be used to promote your services, and one to  increase brand awareness.<br>
+								| All ads are targeted to the physical location of your business and your target audience (based on interests, age, gender etc) 2 post on your Facebook page - subject matter is discussed and all posts are done after your approval.  <br>
+								| (If you don’t have facebook business page we can set it up and design for special discounted price)
+					.package__block
+						h4.package__title.seo SEO:
+						.package__descr
+							p
+								| We will perform a full SEO audit of your page. If you decide to apply any recommendations we can do it for special price. <br>
+								| 1 Optimized, On-Site Monthly Posts <br>
+								| Design of 2 banners of any size for your business;<br>
+								| Bonuses if you order this package service for : <br>
+								| 6 month:  4 hours of SEO expert to answer any of your questions;  <br>
+								| hours of designer to design anything you want or 15% discount;  <br>
+								| 12 month: - 8 hours of SEO expert to answer any of your questions; 8 hours of designer to design anything you want or 15% discount;  up to 2 minute professional video adver tising of your business  or 20% discount.
+				#packg2
+					.package__block
+						h4.package__title.adwords Google ADwords:
+						.package__descr
+							p
+								| If you don’t have google analytics setup we will make it for you for special discounted price.
+								| This is needed to track  and analyse the effectiveness of AD campaigns and will show you
+								| various statistics for visitor of your web pages.
+					.package__block
+						h4.package__title.fb Facebook:
+						.package__descr
+							p
+								| (If you don’t have facebook business page we can set it up and design for special discounted price)
+					.package__block
+						h4.package__title.seo SEO:
+						.package__descr
+							p
+								| 12 month: - 8 hours of SEO expert to answer any of your questions; 8 hours of designer to design anything you want or 15% discount;  up to 2 minute professional video adver tising of your business  or 20% discount.
+				#packg3
+					.package__block
+						h4.package__title.adwords Google ADwords:
+						.package__descr
+							p
+								| 4 data-driven, geographically-targeted Pay-Per-Click campaign. Research of 50 keywords. <br>
+								| 3 remarketing campaigns - we can design banners for special discounted price <br>
+								| 2 Monthly reports - Advanced Analytics Conversion Tracking
+					.package__block
+						h4.package__title.fb Facebook:
+						.package__descr
+							p
+								| Design a 3 data-driven, geographically-targeted AD campaigns. Two will be used to promote your services, and one to  increase brand awareness.<br>
+					.package__block
+						h4.package__title.seo SEO:
+						.package__descr
+							p
+								| We will perform a full SEO audit of your page. If you decide to apply any recommendations we can do it for special price. <br>
+	section.services
+		.container
+			h3.section-title Package services
+			.secvices-content
+				p Our company provides digital marketing services to small to medium businesses. We believe that utilizing the digital marketing channels is very important today, it brings a great value to the business. We focus on the tools that will start working on your business from day1 like PPC advertising, social networks advertising, email marketing remarketing etc. But we can also help you with the long term strategies around SEO optimisation, content strategy, social media and other digital marketing tools.
+				p We have a great team of professional creative designers who can develop your landing page, logo or any user interface. Our programmers will make sure that your landing page is well optimised to be displayed on different device types and corresponds to all new requirements of search engines to receive natural SEO traffic in long term.
+				p We  can also advise you where to host your site, and if you decide to go for own VPS server, we can set it up and manage it for the fixed monthly price.
+				p We have partners that will do great video ads for you.
+				p Based on a small business needs we have developed 3 packages of digital marketing services we believe are the most effective to drive your business growth. We will make sure you are receiving results you are paying for. All packages require you to have the Google Analytics setup on your site. It is beneficial to have Facebook Pixel if you are going to advertise there. If you don’t have those, our professionals can set it up for symbolic price. All our packages are developed in such a way to give immediate result, but still we require you to order them at least for duration of three month.
+	section.clients
+		.container
+			ul.clients__list
+				each item in ['unity','quatrefoil','zimbra','midea','unity','zimbra']
+					li.clients__li
+						img(src='img/clients/'+item+'.png' alt=item)
+
 

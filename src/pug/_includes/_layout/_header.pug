@@ -1,7 +1,14 @@
 header.header
 	section.header-menu__block
 		.container
-			ul.menu
+			.mobile-controls
+				a.mobile-menu__open.js_open-menu(href='#')
+					span.line
+					span.text open menu
+			ul.menu.js_menu
+				li.menu__control
+					a.mobile-menu__close.js_close-menu(href='#')
+						span.text close menu
 				each item, index in ["Services","Why to choose us","Our clients","Payment","Blog","Contacts"]
 					li.menu__item
 						a.menu__link(href='#')=item
