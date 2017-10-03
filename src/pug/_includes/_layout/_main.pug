@@ -2,7 +2,7 @@ main.main
 	section.a_header
 		.container
 			p Our company provides digital marketing services to small to medium businesses. We believe that utilizing the digital marketing channels is very important today, it brings a great value to the business. We focus on the tools that will start working on your business from day1 like PPC advertising, social networks advertising, email marketing remarketing etc. But we can also help you with the long term strate Detailed description of each package you can find below.
-	section.package-services.js_tabs
+	section.package-services.js_tabs#_payment
 		.package-services__title
 			.container
 				h3.section-title Package services
@@ -32,7 +32,7 @@ main.main
 			.package-services__tabs-content.js_tabs-wrap
 				#packg1.activated
 					.package__block
-						h4.package__title.adwords Google ADwords:
+						h4.package__title.gog_adwords Google ADwords:
 						.package__descr
 							p
 								| 4 data-driven, geographically-targeted Pay-Per-Click campaign. Research of 50 keywords. <br>
@@ -62,7 +62,7 @@ main.main
 								| 12 month: - 8 hours of SEO expert to answer any of your questions; 8 hours of designer to design anything you want or 15% discount;  up to 2 minute professional video adver tising of your business  or 20% discount.
 				#packg2
 					.package__block
-						h4.package__title.adwords Google ADwords:
+						h4.package__titlegog_adwords Google ADwords:
 						.package__descr
 							p
 								| If you don’t have google analytics setup we will make it for you for special discounted price.
@@ -80,7 +80,7 @@ main.main
 								| 12 month: - 8 hours of SEO expert to answer any of your questions; 8 hours of designer to design anything you want or 15% discount;  up to 2 minute professional video adver tising of your business  or 20% discount.
 				#packg3
 					.package__block
-						h4.package__title.adwords Google ADwords:
+						h4.package__titlegog_adwords Google ADwords:
 						.package__descr
 							p
 								| 4 data-driven, geographically-targeted Pay-Per-Click campaign. Research of 50 keywords. <br>
@@ -96,16 +96,16 @@ main.main
 						.package__descr
 							p
 								| We will perform a full SEO audit of your page. If you decide to apply any recommendations we can do it for special price. <br>
-	section.services
+	section.services#_services
 		.container
-			h3.section-title Package services
+			h3.section-title our services
 			.secvices-content
 				p Our company provides digital marketing services to small to medium businesses. We believe that utilizing the digital marketing channels is very important today, it brings a great value to the business. We focus on the tools that will start working on your business from day1 like PPC advertising, social networks advertising, email marketing remarketing etc. But we can also help you with the long term strategies around SEO optimisation, content strategy, social media and other digital marketing tools.
 				p We have a great team of professional creative designers who can develop your landing page, logo or any user interface. Our programmers will make sure that your landing page is well optimised to be displayed on different device types and corresponds to all new requirements of search engines to receive natural SEO traffic in long term.
 				p We  can also advise you where to host your site, and if you decide to go for own VPS server, we can set it up and manage it for the fixed monthly price.
 				p We have partners that will do great video ads for you.
 				p Based on a small business needs we have developed 3 packages of digital marketing services we believe are the most effective to drive your business growth. We will make sure you are receiving results you are paying for. All packages require you to have the Google Analytics setup on your site. It is beneficial to have Facebook Pixel if you are going to advertise there. If you don’t have those, our professionals can set it up for symbolic price. All our packages are developed in such a way to give immediate result, but still we require you to order them at least for duration of three month.
-	section.clients
+	section.clients#_clients
 		.container
 			ul.clients__list
 				each item in ['unity','quatrefoil','zimbra','midea','unity','zimbra']
@@ -113,3 +113,62 @@ main.main
 						img(src='img/clients/'+item+'.png' alt=item)
 
 
+	section.choose_us.pad#_choose_us
+		.container
+			h3.section-title
+				| Why to choose us
+			.artical
+				p.
+					Our experts have a great knowledge of all available digital marketing tools and will utilise just the ones that will be working for your business. We will be focusing on short term and long term results. With help of Pay Per Click advertising you can start getting the customers from day1. But it cannot be just the only tool you use, it is very important to turn your hot customer
+				p.
+					into loyal audience, to keep in touch, remind about your existence trying to keep continuous communication channel. It is almost not possible to effectively promote your goods and services in Internet without good brand these days.
+				p.
+					We understand your business needs these days, and with help of digital marketing tools we are going to help you to achieve two main goals:
+				p.
+					1) short term: get customers ready to purchase your services - PPC advertising, social media advertising
+				p.
+					2) long term: increase brand awareness, build loyal customer base - social media, video advertising, email marketing, setting up promotions etc.
+	section.social_media.pad
+		.container
+			h3.section-title
+				| Social Media Marketing and Your Business
+			.artical
+				p Whether your business is B2B or B2C, social media marketing can help spread the word about your quality products and services. We’ll not only get the word out, but we can manage your social media accounts, update content and track the results, leaving you free to run your business.
+				p.
+					Increased TraffiC
+					Social media marketing doesn’t just gain followers; it shares your brand’s message which increases visitors to your site, in turn generating new customers and referrals.
+				p.
+					Increased Exposure
+					Effective social media marketing places your brand in front of your target audience. Our social marketing packages help grow your brand, by leaving a lasting impression on customers.
+	section.blog.pad#_blog
+		.container
+			h3.section-title
+				| OUR BLOG
+			.operator-items
+				.operator-item
+					.o-img
+						img(src="img/blog/operator-1.png", alt="")
+					.o-dscr
+						span.name_of_blog
+							| Site Traffic vs. Leads: <br>
+							| The Difference Matters
+						span.date
+							| 10 April 2017
+				.operator-item
+					.o-img
+						img(src="img/blog/operator-2.png", alt="")
+					.o-dscr
+						span.name_of_blog
+							| Site Traffic vs. Leads: <br>
+							| The Difference Matters
+						span.date
+							| 10 April 2017
+				.operator-item
+					.o-img
+						img(src="img/blog/operator-3.png", alt="")
+					.o-dscr
+						span.name_of_blog
+							| Site Traffic vs. Leads: <br>
+							| The Difference Matters
+						span.date
+							| 10 April 2017

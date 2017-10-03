@@ -1,3 +1,34 @@
-footer.footer
-    h2 footer
-    
+footer.contacts#_contacts
+	.container
+		h3.section-title
+			| contact us
+		.form-wrapper
+			form#contact-form(action='' method="get")
+				.first-input
+					.l-n
+						input#name.mp_cond(placeholder='Name', name='name', type='text')
+					.l-l
+						input#last_name.mp_cond(placeholder='Surname', name='last_name', type='text')
+				.second-input
+					label(for="email")
+						input#email.mp_cond(placeholder='E-mail', name='email', type='email')
+				.last-input
+					label(for="body")
+						textarea#body.mp_cond(placeholder='Message', name='body')
+				.submit-input
+					input.mp_cond(type='submit', value='Submit')
+	.map-container
+		#map
+	.footer-links
+		.container
+			a(href='digitalmk.biz') Digitalmk.biz
+			a(href='http://facebook.com').social
+				img(src='img/fb.png')
+			a(href='#_services') Our Services
+			a(href='#_payment') Payment
+			a(href='#_blog') Blog
+			a(href='#_contacts') Contacts
+			a(href='tel:+420775943966') +420775943966
+
+
+

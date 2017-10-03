@@ -6,20 +6,20 @@
 );*/
 
 .container{
-  max-width: 1440px;
+  max-width: 992px;
   margin: 0 auto;
     padding: {
         right: 20px;
         left: 20px;
     }
 }
-
 html,body {
   font-family: 'Segoe UI';
   font-weight: 400;
   color: #060606;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 24px;
+  line-height: 30px;
+  min-width: 320px;
 }
 * {
   box-sizing: border-box;
@@ -28,8 +28,14 @@ html,body {
 
 @include breakpoint(1024) {
   html,body {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 26px;
   }
 
+}
+@include breakpoint(480) {
+  html,body {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

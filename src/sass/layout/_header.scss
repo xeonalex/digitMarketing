@@ -17,8 +17,8 @@
 	padding: 0 20px;
 	cursor: pointer;
 	color: #fff;
-	font-size: 32px;
-	line-height: 40px;
+	font-size: 20px;
+	line-height: 26px;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 700;
@@ -48,18 +48,18 @@
 		display: block;
 	}
 	.company {
-		font-size: 90px;
+		font-size: 80px;
 		color: #55b7dc;
 		font-weight: 300;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 	.title {
-		font-size: 106px;
+		font-size: 90px;
 		color: #fc982d;
 		font-weight: bold;
 	}
 	.subtitle {
-		font-size: 68px;
+		font-size: 60px;
 		color: #fc982d;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -67,7 +67,7 @@
 		margin-bottom: 10px;
 	}
 	.subtext {
-		font-size: 42px;
+		font-size: 36px;
 		color: #fff;
 		font-weight: 300;
 	}
@@ -77,16 +77,21 @@
 }
 
 @include breakpoint(1440) {
-  .menu__link {
-    font-size: 28px;
-    line-height: 34px;
-  }
+	.header__block {
+		padding-top: 55px;
+	}
 }
 @include breakpoint(1024) {
   .menu__link {
     font-size: 24px;
     line-height: 30px;
+    padding: 0 10px;
   }
+}
+@include breakpoint(1023) {
+	.menu {
+		justify-content: flex-start;
+	}
 }
 
 @include breakpoint(768) {
@@ -112,33 +117,31 @@
 	}
 	.mobile-menu__open{
 		display: inline-block;
-		.line {
-			display: block;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		background-color: $ac;
+		background-clip: content-box;
+		width: 40px;
+		height: 32px;
+		position: relative;
+		&:before {
+			content: '';
 			background-color: $ac;
-			width: 40px;
+			position: absolute;
+			width: 100%;
 			height: 4px;
-			margin-top: 14px;
-			margin-bottom: 14px;
-			position: relative;
-			&:before {
-				content: '';
-				background-color: $ac;
-				position: absolute;
-				width: 100%;
-				height: 4px;
-				top: -12px;
-				left: 0;
-				}
-
-			&:after {
-				content: '';
-				position: absolute;
-				width: 100%;
-				height: 4px;
-				background-color: $ac;
-				bottom: -12px;
-				left: 0;
+			top: 0;
+			left: 0;
 			}
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 4px;
+			background-color: $ac;
+			bottom: 0;
+			left: 0;
 		}
 		.text {
 			display: none;
@@ -182,5 +185,50 @@
 		display: block;
 		text-align: right;
 	}
-
+	.menu__link {
+		padding: 10px;
+	}
+	.menu__item{
+		margin-bottom: 10px;
+		&:nth-last-of-type(1) {
+			margin-bottom: 0;
+		}
+	}
+	.home-link {
+		.company {
+			font-size: 60px;
+			margin-bottom: 20px;
+		}
+		.title {
+			font-size: 76px;
+		}
+		.subtitle {
+			font-size: 50px;
+		}
+		.subtext {
+			font-size: 30px;
+		}
+	}
+}
+@include breakpoint(480) {
+	.home-link {
+		padding-left: 0;
+		.company {
+			font-size: 40px;
+			margin-bottom: 15px;
+		}
+		.title {
+			font-size: 60px;
+		}
+		.subtitle {
+			font-size: 40px;
+		}
+		.subtext {
+			font-size: 26px;
+		}
+	}
+	.header__block {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 }
